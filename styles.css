@@ -12,7 +12,17 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
-/* Navigation Bar */
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+}
+
+
+/* NAVIGATION BAR */
 .navbar {
     transition: all 0.4s ease;
 }
@@ -39,4 +49,29 @@ body {
 
 .navbar li a:hover {
     color: rgb(253, 119, 9);
+}
+
+
+/* ABOUT */
+.about {
+    margin-top: 5%;
+}
+
+.about-info {
+    text-align: justify;
+    float: left;
+    width: 60%;
+}
+
+.about-image {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+
+.about-image img {
+    margin-top: 12%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
 }
