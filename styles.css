@@ -103,7 +103,6 @@ body {
 
 .project-image img {
     width: 80%;
-    height: 80%;
     border-radius: 5%;
     border: 2px outset orange;
     box-shadow: 3px 3px 1px rgb(211, 211, 211);
