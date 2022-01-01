@@ -85,6 +85,38 @@ body {
 /* PROJECTS */
 .projects {
     margin-top: 5%;
-    width: 100%;
+    width: 60%;
     float: left;
+}
+
+.project {
+    display: table;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.project-image {
+    float: left;
+    width: 30%;
+    display: table-cell;
+}
+
+.project-image img {
+    width: 80%;
+    height: 80%;
+    border-radius: 5%;
+    border: 2px outset orange;
+    box-shadow: 3px 3px 1px rgb(211, 211, 211);
+}
+
+.project-info {
+    float: left;
+    width: 70%;
+    display: table-cell;
+    text-align: justify;
+}
+
+.project-heading {
+    font-size: 20px;
+    font-weight: bold;
 }
