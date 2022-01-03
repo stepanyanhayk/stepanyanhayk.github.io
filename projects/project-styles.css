@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Heebo', sans-serif;
+    text-align: justify;
+}
+
+.project-description {
+    width: 100%;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.media {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.media iframe {
+    width: 60%;
+    height: 400px;
+}
+
+.media img {
+    width: 60%;
+}
