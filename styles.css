@@ -91,7 +91,8 @@ body {
 
 .project {
     display: table;
-    margin-top: 5%;
+    margin-top: 1%;
+    margin-bottom: 4%;
     width: 100%;
 }
 
