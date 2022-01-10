@@ -12,6 +12,11 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
+a {
+    color: rgb(253, 119, 9);
+}
+
+
 .heading {
     font-size: 40px;
     font-weight: bold;
