@@ -158,7 +158,7 @@ a {
 }
 
 .close:hover, .close:focus {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     cursor: pointer;
 }
@@ -178,8 +178,12 @@ iframe {
 
 .contact a {
     padding: 1%;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+.contact a:hover {
+    color: rgb(253, 119, 9);
 }
 
 .footer {
