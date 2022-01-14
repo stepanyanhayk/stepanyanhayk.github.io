@@ -150,6 +150,22 @@ a {
     height: 80%;
 }
 
+.modal-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(253, 119, 9);
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: 'Heebo', sans-serif;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-button:hover {
+    background-color: rgb(253, 119, 9);
+    color: rgb(255, 255, 255);
+}
+
 .close {
     color: rgb(0, 0, 0);
     float: right;
