@@ -1,240 +1,173 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 body {
-    max-width: 65%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Heebo', sans-serif;
-    background-color: #333;
-    color: white;
-}
-
-a {
-    color: rgb(253, 119, 9);
-}
-
-
-.heading {
-    font-size: 40px;
-    color: rgb(253, 119, 9);
-}
-
-.subheading {
-    font-size: 30px;
-    color: rgb(253, 119, 9);
-}
-
-.text {
-    font-size: 20px;
-}
-
-
-/* NAVIGATION BAR */
-.navbar {
-    transition: all 0.4s ease;
-}
-
-.navbar ul {
-    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.navbar li {
-    float: right;
-}
-
-.navbar li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 20px;
-    text-decoration: none;  
-}
-
-.navbar li a:hover {
-    color: rgb(253, 119, 9);
-}
-
-
-/* ABOUT */
-.about {
-    margin-top: 5%;
-}
-
-.about-info {
-    text-align: justify;
-    float: left;
-    width: 60%;
-}
-
-.about-image {
-    float: left;
-    width: 40%;
-    text-align: center;
-}
-
-.about-image img {
-    margin-top: 12%;
-    width: 50%;
-    height: 50%;
-    border-radius: 20%;
-}
-
-
-/* PROJECTS */
-.projects {
-    margin-top: 5%;
-    width: 60%;
-    float: left;
-}
-
-.project {
-    display: table;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    width: 100%;
-}
-
-.project-image {
-    float: left;
-    width: 30%;
-    display: table-cell;
-}
-
-.project-image img {
+  
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
     width: 80%;
-    border-radius: 5%;
-    border: 2px outset rgb(253, 119, 9);
-    box-shadow: 3px 3px 1px rgb(211, 211, 211);
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Adjust as needed for spacing from top */
 }
 
-.project-info {
-    float: left;
-    width: 70%;
-    display: table-cell;
-    text-align: justify;
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.project-heading {
-    font-size: 20px;
-    /* font-weight: bold; */
-    color: rgb(253, 119, 9);
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
+.intro {
+    display: flex; /* Added for mobile responsiveness */
+    flex-direction: column; /* Added for mobile responsiveness */
+    padding: 20px;
+    text-align: left;
+}
 
-/* MODAL */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding: 5%;
-    left: 0;
-    top: 0;
+.intro h1 {
+    font-size: 1.5rem; /* Use rem for responsiveness */
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1rem; /* Use rem for responsiveness */
+    color: #333;
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px; /* Adjust spacing from the intro paragraph */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.about-me {
+    margin-top: 20px; /* Spacing between social-links and about-me */
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.about-me p {
+    font-size: 1rem; /* Use rem for responsiveness */
+    color: #333;
+    margin: 0;
+}
+
+.experience {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.experience-entry {
+    display: flex; /* Added for mobile responsiveness */
+    align-items: flex-start;
+    margin-bottom: 20px; /* Spacing between experience entries */
+}
+
+.company-logo {
+    flex: 0 0 auto;
+    width: 50px;
+    height: auto; /* Use auto for aspect ratio on mobile */
+    margin-right: 20px;
+}
+
+.company-logo img {
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(253, 119, 9, 0.2);
+    object-fit: contain; /* Ensure logos maintain aspect ratio */
 }
 
-.modal-content {
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    padding: 2%;
-    border: 1px solid rgb(253, 119, 9);
-    width: 80%;
-    height: 80%;
+.experience-info {
+    flex: 1; /* Take up remaining space for text on mobile */
 }
 
-.modal-button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid rgb(253, 119, 9);
-    border-radius: 3px;
-    font-size: 15px;
-    font-family: 'Heebo', sans-serif;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.experience-info h3 {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: #333;
 }
 
-.modal-button:hover {
-    background-color: rgb(253, 119, 9);
-    color: rgb(255, 255, 255);
-}
-
-.close {
-    color: rgb(0, 0, 0);
-    float: right;
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.close:hover, .close:focus {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-iframe {
-    width: 100%;
-    height: 90%;
-}
-
-
-/* CONTACT */
-.contact {
-    margin-top: 4%;
-    width: 100%;
-    float: left;
-}
-
-.contact a {
-    padding: 1%;
-    color: white;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    color: rgb(253, 119, 9);
+.experience-info p {
+    font-size: 1rem; /* Use rem for responsiveness */
+    color: #333;
+    margin: 0;
 }
 
 .footer {
-    width: 100%;
-    float: left;
+    margin-top: 10px;
+    padding: 10px;
     text-align: center;
-    margin-top: 1%;
-    font-size: 18px;
+    color: #333;
+    font-size: 14px;
 }
 
-/* FEATURED */
-.featured {
-    margin-top: 4%;
-    width: 100%;
-    float: left;
+
+@media only screen and (max-width: 768px) {
+    .profile-pic {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
+    }
+    .intro {
+        text-align: center;
+    }
+    /* .intro h1 {
+        font-size: 18px;
+    } */
+    .intro p {
+        font-size: 14px;
+    }
 }
 
-.featuredPoints {
-    float: left;
-    display: table-cell;
-    text-align: justify;
-    font-size: 20px;
+@media only screen and (max-width: 768px) {
+    .experience-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-logo {
+        width: 40px; /* Reduce logo size */
+        height: 40px;
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+    .experience-info {
+        text-align: center;
+    }
 }
-
-.featuredPoints li a {
-    color: white;
-}
-
-.featuredPoints li a:hover {
-    color: rgb(253, 119, 9);
-}
-

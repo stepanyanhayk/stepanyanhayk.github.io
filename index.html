@@ -2,203 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/armenian-emblem.png" type="image/icon type">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <title>Hayk Stepanyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="Hayk_Stepanyan_Resume.pdf" target="_blank">RÉSUMÉ</a></li>
-            <li><a href="Cover Letter.pdf" target="_blank">COVER LETTER</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-        </ul>
-    </div>
-    <div class="about">
-        <div class="about-info">
-            <div>
-                <p class="heading">
-                    HAYK STEPANYAN
+    <header class="header">
+        <div class="container">
+            <div class="profile-pic">
+                <img src="images/philly.jpg" alt="Your Picture">
+                <div class="intro">
+                    <h1>Hayk Stepanyan</h1>
+                    <p>I am a software engineer at Google, where I develop machine learning and data solutions to simplify and accelerate the deployment of hardware on Google’s data centers, the largest, most energy, and cost-efficient distributed computing infrastructure in the world. I work with data from the hardware and low-level software qualification process.
+                    </p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/hayk-stepanyan/" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/stepanyanhayk" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="path/to/your/resume.pdf" target="_blank" class="social-link">
+                    <i class="fas fa-file-alt"></i> Resume
+                </a>
+            </div>
+            <div class="about-me">
+                <h2>About Me</h2>
+                <p>I was born and raised in Armenia, where I attended a Physics and Mathematics specialized school. I then earned my undergraduate degree in Computer Science from the Georgia Institute of Technology, with a specialization in artificial intelligence and embedded devices.
                 </p>
-            </div>
-            <div>
-                <p class="text">
-                    I am a senior at the <a href="https://www.cc.gatech.edu/" target="_blank"> Georgia Institute of Technology</a>
-                    studying Computer Science with concentrations on smart devices and artificial intelligence. I am passionate about using technologies to find solutions for real-life problems. In particular, my technical interests include large-scale software systems, computer vision models, cloud solutions, smart devices, autonomous machines, and financial tech.
-                    <br><br>
-                    I was born and raised in <a href="https://explorearmenia.am/en/tourism-news/197-25-amazing-things-you-probably-didn-t-know-about-armenia.html" target="_blank"> Armenia</a>,
-                    where  I went to <a href="https://en.wikipedia.org/wiki/PhysMath_School,_Yerevan" target="_blank">Physics and Mathematics specialized school</a>. 
-                    In my free time, I enjoy playing football and chess, hiking, and traveling. 
-                    <a href="https://vsco.co/stepanyanhayk/gallery" target="_blank">Here</a> is my digital travel diary.
-                    <br><br>
-                    I am currently interning at Google in the Bay Area, where I am part of the Cloud Networking Engineering Productivity team.
-                    <br><br>
-                    Last summer, I had the opportunity to work as a software engineer intern at Meta. During my time there, I developed personalized, interest-based generators for the 
-                    <a href="https://about.fb.com/news/2022/10/facebook-communities-summit-2022/#:~:text=Reels%20in%20Groups%20let%20you,connect%20on%20a%20deeper%20level." target="_blank"> Facebook Group Reals</a> and Video recommendation system.
-                    <br><br>
-                    In 2021, I worked at <a href="https://www.hilearn.io/" target="_blank">HiLearn</a>, researching machine learning models for market (stocks, bonds, funds) simulation and helping to develop an AI-automated financial advising application.
-                    <br><br>
-                    Additionally, I have had the privilege of working as an undergraduate researched under the supervision of 
-                    <a href="https://dellaert.github.io/" target="_blank">Prof. Frank Dellaert</a> in the School of Interactive Computing, focusing mainly on <a href="https://github.com/borglab/gtsfm/" target="_blank">GTSfM</a>.
-                    If you would like to learn more about my research please look at my recent research <a href="https://arxiv.org/pdf/2311.18801.pdf" target="_blank">paper</a>.
-                    <br><br>
-                </p>
-            </div>
-        </div>
-        <div class="about-image">
-            <img src="images/philly.jpg">
-        </div>
-    </div>
-    <div id="projects" class="projects">
-        <p class="subheading">PROJECTS</p>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/hiking.jpg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">MOBILE APP FOR HIKING</p>
                 <br>
-                <p class="text">
-                    A mobile application to make hiking activities safer and more engaging.
-                    <button class="modal-button" href="#hikingModal">Read more...</button>
-                    <div id="hikingModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/hiking.html"></iframe>
-                        </div>
-                    </div>
+                <p>My technical interests revolve around the research and development of large-scale machine learning systems, spanning both the creation of cutting-edge models and the design of efficient and scalable infrastructure to support their training and deployment.
                 </p>
             </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/object-detection.jpg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">OBJECT DETECTOR</p>
-                <br>
-                <p class="text">
-                    A web application that runs a machine learning model to demonstrate 
-                    object detection in real-time.
-                    <button class="modal-button" href="#detectorModal">Read more...</button>
-                    <div id="detectorModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/object-detector.html"></iframe>
-                        </div>
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="experience-entry">
+                    <div class="company-logo">
+                        <img src="images/gatech.png" alt="GTSFM Logo">
                     </div>
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/traffic.jpeg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">TRAFFIC SIGN IMAGE CLASSIFIER</p>
-                <br>
-                <p class="text">
-                    A deep convolutional neural network model that classifies images of 
-                    traffic signs.
-                    <button class="modal-button" href="#trafficModal">Read more...</button>
-                    <div id="trafficModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/traffic.html"></iframe>
-                        </div>
+                    <div class="experience-info">
+                        <h3>GTSFM, Undergraduate Researcher</h3>
+                        <p>I’ve had the privilege of conducting undergraduate research under the supervision of Prof. Frank Dellaert, focusing on GTSFM, an end-to-end structure-from-motion framework. My work involved researching and developing a distributed cluster to accelerate and parallelize heavy computations, achieving high scalability and enabling efficient processing of large datasets. You can learn more about our research by checking out our paper: Distributed Global Structure-from-Motion with a Deep Front-End (<a href="https://arxiv.org/pdf/2311.18801">https://arxiv.org/pdf/2311.18801</a>).</p>
                     </div>
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/archives.jpeg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">DATABASE APPLICATION FOR THE ARCHIVES</p>
-                <br>
-                <p class="text">
-                    A database application developed for the National Archives of Armenia.
-                    <button class="modal-button" href="#databaseModal">Read more...</button>
-                    <div id="databaseModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/archives.html"></iframe>
-                        </div>
+                </div>
+                <div class="experience-entry">
+                    <div class="company-logo">
+                        <img src="images/google.png" alt="Google Logo">
                     </div>
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/filmmaking.jpg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">FILMMAKING</p>
-                <br>
-                <p class="text">
-                    I have been participating in several filmmaking workshops and projects, 
-                    during which I had the honor and privilege to work with world-famous cinematographers.
-                    <button class="modal-button" href="#filmModal">Read more...</button>
-                    <div id="filmModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/filmmaking.html"></iframe>
-                        </div>
+                    <div class="experience-info">
+                        <h3>Google, Software Engineer Intern</h3>
+                        <p>As an intern at Google’s Cloud Networking EngProd team, I developed a flag synchronization service to prevent incidents, added a feature that synchronizes pull requests, and developed a library that facilitates load testing with regionally selected flags on various virtual machine controllers. These projects reduced production outages by 7% and improved the load testing framework’s maintainability.</p>
                     </div>
-                </p>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image">
-                <img src="images/football.jpg">
-            </div>
-            <div class="project-info">
-                <p class="project-heading">FOOTBALL</p>
-                <br>
-                <p class="text">
-                    In 2019, Armenia hosted UEFA U-19 European championship, and I had the chance to work with 
-                    Italy U-19 Team.
-                    <button class="modal-button" href="#footballModal">Read more...</button>
-                    <div id="footballModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="projects/football.html"></iframe>
-                        </div>
+                </div>
+                <div class="experience-entry">
+                    <div class="company-logo">
+                        <img src="images/meta.png" alt="Meta Logo">
                     </div>
-                </p>
+                    <div class="experience-info">
+                        <h3>Meta, Software Engineer Intern</h3>
+                        <p>During my internship at Meta, I had the opportunity to work on the Facebook Group Reels and Video recommender system. I built end-to-end personalized and user-interest-based video generators for the Facebook group reels distribution. Additionally, I researched and developed an originality-controlled group video generator for the In-Feed recommendations. These efforts collectively increased group reels watch time by 0.5%, resulting in approximately 12 million more user exposures.</p>
+                    </div>
+                </div>
+                <div class="experience-entry">
+                    <div class="company-logo">
+                        <img src="images/hilearn.png" alt="HiLearn Logo">
+                    </div>
+                    <div class="experience-info">
+                        <h3>HiLearn, Research Engineer</h3>
+                        <p>At HiLearn, I researched machine learning models for simulating market trends in stocks, bonds, and funds, and contributed to the development of an AI-driven financial advisory tool. I investigated long-term market simulation models, created Jupyter notebooks to analyze and compare portfolio management strategies, and designed APIs with Flask to integrate research findings into production, enhancing the application's predictive capabilities.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="featured">
-        <p class="subheading">FEATURED</p>
-        <div class="featuredPoints">
-            <ul>
-                <li><a href="https://youtu.be/HTTYwg-IKiw" target="_blank">Armenian Public TV interview</a></li>
-                <li><a href="https://youtu.be/cAmEqAy8HBQ" target="_blank">ArmeniaTV News interview</a></li>
-                <li><a href="https://huysfoundation.org/scholars/hayk-stepanyan/" target="_blank">Huys Foundation article</a></li>
-                <li><a href="https://gatech.meritpages.com/stories/Hayk-Stepanyan-Earns-Faculty-Honors-at-Georgia-Tech-for-the-Fall-2021-Semester/74315398" target="_blank">Georgia Tech Faculty Honors</a></li>
-                <li><a href="https://gatech.meritpages.com/stories/Hayk-Stepanyan-Named-to-Dean-s-List-at-Georgia-Tech-for-the-Spring-2022-Semester/86310111" target="_blank">Georgia Tech Dean's List</a></li>
-            </ul>
-        </div>
-    </div>
-    <div id="contact" class="contact">
-        <p class="subheading">CONTACT</p>
-        <a href="mailto:stepanyan@gatech.edu" class="fa fa-envelope fa-3x"></a>
-        <a href="https://github.com/stepanyanhayk" class="fa fa-github fa-3x" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/hayk-stepanyan/" class="fa fa-linkedin fa-3x" target="_blank"></a>
-        <a href="https://www.facebook.com/stepanyanhayk2002/" class="fa fa-facebook-square fa-3x" target="_blank"></a>
-    </div>
-    <div class="footer">
-        <p>&copy; Hayk Stepanyan 2023 | Created by me in <a href="https://explorearmenia.am/en/tourism-news/197-25-amazing-things-you-probably-didn-t-know-about-armenia.html" target="_blank">Armenia</a></p>
-    </div>
-    <script src="scripts.js"></script>
+    </header>
+    <footer class="footer">
+        <p>© Hayk Stepanyan 2024 | Created by me in Armenia</p>
+    </footer>
 </body>
 </html>
