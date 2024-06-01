@@ -30,6 +30,9 @@
                 <a href="Hayk_Stepanyan_Resume.pdf" target="_blank" class="social-link">
                     <i class="fas fa-file-alt"></i> Resume
                 </a>
+                <a href="#" class="social-link" onclick="copyEmailToClipboard()">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
             </div>
             <div class="about-me">
                 <h2>About Me</h2>
@@ -83,5 +86,28 @@
     <footer class="footer">
         <p>© Hayk Stepanyan 2024 | Created by me in Armenia</p>
     </footer>
+
+    <!-- Custom Alert Box -->
+    <div id="custom-alert" class="custom-alert">Email address copied to clipboard!</div>
+
+    <!-- JavaScript to copy email to clipboard -->
+    <script>
+        function copyEmailToClipboard() {
+            const email = 'haykstepanyan02@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                const alertBox = document.getElementById('custom-alert');
+                alertBox.style.display = 'block';
+                setTimeout(() => {
+                    alertBox.classList.add('fade-out');
+                }, 3000); // Wait 4 seconds before starting fade out
+                setTimeout(() => {
+                    alertBox.style.display = 'none';
+                    alertBox.classList.remove('fade-out');
+                }, 6000); // Wait 6 seconds before hiding completely
+            }).catch(err => {
+                console.error('Failed to copy email address: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
