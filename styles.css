@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-  
+
 .header {
     background-color: #f4f4f4;
     padding: 20px;
@@ -115,18 +115,30 @@ h2 {
 
 .experience-info {
     flex: 1; /* Take up remaining space for text on mobile */
+    display: flex;
+    flex-direction: column;
 }
 
 .experience-info h3 {
     font-size: 20px;
     margin: 0 0 5px 0;
     color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .experience-info p {
     font-size: 1rem; /* Use rem for responsiveness */
     color: #333;
     margin: 0;
+}
+
+.experience-date {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #666; /* Lighter color for distinction */
+    margin-left: 10px; /* Spacing from the job title */
+    display: inline-block; /* Ensures proper positioning */
 }
 
 .footer {
