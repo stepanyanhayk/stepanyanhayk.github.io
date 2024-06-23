@@ -176,11 +176,21 @@ h2 {
         width: 100px;
         height: 100px;
     }
-    .intro {
+    .intro, .about-me {
         text-align: center;
     }
-    .intro p {
+    .intro p, .about-me p, .experience-info p {
         font-size: 14px;
+    }
+
+    .experience-info h3 {
+        flex-direction: column; /* Stack title and date vertically */
+        align-items: center; /* Align text to the left */
+    }
+
+    .experience-date {
+        margin-left: 0; /* Remove margin */
+        margin-top: 5px; /* Add some space between title and date */
     }
 }
 
