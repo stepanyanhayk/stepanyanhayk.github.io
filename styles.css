@@ -176,7 +176,7 @@ h2 {
         width: 100px;
         height: 100px;
     }
-    .intro, .about-me {
+    .intro, .about-me, .experience {
         text-align: center;
     }
     .intro p, .about-me p, .experience-info p {
@@ -202,6 +202,7 @@ h2 {
     .company-logo {
         width: 40px; /* Reduce logo size */
         height: 40px;
+        margin-right: 0px;
         margin-bottom: 10px; /* Adjust spacing */
     }
     .experience-info {
