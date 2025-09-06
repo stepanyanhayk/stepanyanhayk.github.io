@@ -3,101 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hayk Stepanyan</title>
+    <title>Hayk Stepanyan - Software Engineer at Google</title>
+    <meta name="description" content="Hayk Stepanyan is a Software Engineer at Google, specializing in machine learning and data analytics for hardware qualification in data centers.">
+    <meta name="keywords" content="Hayk Stepanyan, Software Engineer, Google, Machine Learning, Data Analytics, Georgia Tech">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/google.png">
 </head>
 <body>
-    <header class="header">
+    <main class="header">
         <div class="container">
-            <div class="profile-pic">
-                <img src="images/philly.jpg" alt="Your Picture">
+            <section class="profile-pic">
+                <img src="images/philly.jpg" alt="Hayk Stepanyan" loading="lazy">
                 <div class="intro">
                     <h1>Hayk Stepanyan</h1>
-                    <p>I am a software engineer at Google, where I develop machine learning and data analytics solutions to simplify and accelerate the deployment of hardware on Google’s data centers, the largest, most energy, and cost-efficient distributed computing infrastructure in the world. I work with data from the hardware and low-level software qualification process.
+                    <p>I am a Master’s student in Computer Science at Columbia University, specializing in Machine Learning. Previously, I was a Software Engineer at Google, where I built large-scale evaluation benchmarks for LLMs on the Responsible AI team and developed scalable data pipelines and statistical analysis systems that accelerated GPU/TPU qualification within the Platforms Infrastructure Engineering team.
                     </p>
                 </div>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/hayk-stepanyan/" target="_blank" class="social-link">
+            </section>
+            
+            <nav class="social-links">
+                <a href="https://www.linkedin.com/in/hayk-stepanyan/" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
-                <a href="https://github.com/stepanyanhayk" target="_blank" class="social-link">
+                <a href="https://github.com/stepanyanhayk" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fab fa-github"></i> GitHub
                 </a>
-                <a href="Hayk_Stepanyan_Resume.pdf" target="_blank" class="social-link">
+                <a href="Hayk_Stepanyan_Resume.pdf" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fas fa-file-alt"></i> Resume
                 </a>
-                <a href="#" class="social-link" onclick="copyEmailToClipboard()">
+                <a href="#" class="social-link" onclick="copyEmailToClipboard()" aria-label="Copy email address">
                     <i class="fas fa-envelope"></i> Email
                 </a>
-            </div>
-            <div class="about-me">
+            </nav>
+            
+            <section class="about-me">
                 <h2>About Me</h2>
-                <p>I was born and raised in Armenia, where I attended a Physics and Mathematics specialized school. I then earned my undergraduate degree in Computer Science from the Georgia Institute of Technology, with a specialization in artificial intelligence and embedded devices.
+                <p>I was born and raised in Armenia, where I attended a specialized Physics and Mathematics school. I later earned my B.S. in Computer Science from the Georgia Institute of Technology, where I've had the privilege of conducting undergraduate research under the supervision of Prof. <a href="https://dellaert.github.io/" target="_blank" rel="noopener noreferrer">Frank Dellaert</a>.
                 </p>
-                <br>
-                <p>My technical interests revolve around the research and development of large-scale machine learning systems, spanning both the creation of cutting-edge models and the design of efficient and scalable infrastructure to support their training and deployment.
+                <p>My technical interests lie in the research and development of large-scale machine learning systems, spanning both the creation of large generative models and the design of the distributed infrastructure that supports their training and inference.
                 </p>
-            </div>
-            <div class="experience">
+            </section>
+            
+            <section class="experience">
                 <h2>Experience</h2>
-                <div class="experience-entry">
+                <article class="experience-entry">
                     <div class="company-logo">
-                        <img src="images/google.png" alt="Google Logo">
+                        <img src="images/google.png" alt="Google Logo" loading="lazy">
                     </div>
                     <div class="experience-info">
-                        <h3>Google, Software Engineer <span class="experience-date">Apr 2024 - Present</span></h3>
-                        <p>I develop data- and machine learning-driven solutions for faster and more reliable hardware qualification at the Google Cloud data centers.</p>
+                        <h3>Google | Software Engineer <span class="experience-date">Apr 2024 - Aug 2025</span></h3>
+                        <p><b>Google Research</b>: Built large-scale evaluation benchmarks for LLMs on the Responsible AI team, enabling systematic assessment of cultural understanding and bias in Gemini models.</p>
+                        <br>
+                        <p><b>Google Cloud</b>: Engineered scalable data pipelines and statistical analysis systems that accelerated GPU/TPU hardware qualification.</p>
                     </div>
-                </div>
-                <div class="experience-entry">
+                </article>
+                <article class="experience-entry">
                     <div class="company-logo">
-                        <img src="images/gatech.png" alt="GTSFM Logo">
+                        <img src="images/gatech.png" alt="GTSFM Logo" loading="lazy">
                     </div>
                     <div class="experience-info">
-                        <h3>GTSFM, Undergraduate Researcher <span class="experience-date">Aug 2021 - Dec 2023</span></h3>
-                        <p>I’ve had the privilege of conducting undergraduate research under the supervision of Prof. <a href="https://dellaert.github.io/" target="_blank">Frank Dellaert</a>, focusing on <a href="https://github.com/borglab/gtsfm" target="_blank">GTSFM</a>, an end-to-end structure-from-motion framework. My work involved researching and developing a distributed cluster to accelerate and parallelize heavy computations, achieving high scalability and enabling efficient processing of large datasets. You can learn more about our research by checking out our paper: <a href="https://arxiv.org/pdf/2311.18801" target="_blank">Distributed Global Structure-from-Motion with a Deep Front-End</a>.</p>
+                        <h3>Georgia Tech (GTSFM) | Undergraduate Researcher <span class="experience-date">Aug 2021 - Dec 2023</span></h3>
+                        <p>Researched and developed distributed infrastructure for GTSFM (Global Structure-from-Motion), enabling large-scale 3D reconstruction across compute clusters. Check out our paper to learn more: <a href="https://arxiv.org/pdf/2311.18801" target="_blank" rel="noopener noreferrer">Distributed Global Structure-from-Motion with a Deep Front-End</a>.</p>
                     </div>
-                </div>
-                <div class="experience-entry">
+                </article>
+                <article class="experience-entry">
                     <div class="company-logo">
-                        <img src="images/cloud.png" alt="Google Cloud Logo">
+                        <img src="images/cloud.png" alt="Google Cloud Logo" loading="lazy">
                     </div>
                     <div class="experience-info">
-                        <h3>Google, Software Engineer Intern <span class="experience-date">May 2023 - Aug 2023</span></h3>
-                        <p>As an intern at Google’s Cloud Networking EngProd team, I developed a flag synchronization service to prevent incidents, added a feature that synchronizes pull requests, and developed a library that facilitates load testing with regionally selected flags on various virtual machine controllers. These projects reduced production outages by 7% and improved the load testing framework’s maintainability.</p>
+                        <h3>Google | Software Engineer Intern (Cloud Networking EngProd) <span class="experience-date">May 2023 - Aug 2023</span></h3>
+                        <p>Built a flag synchronization service adopted by 3+ teams, reducing production outages by 7% and improving deployment safety.</p>
+                        <br>
+                        <p>Automated pull request synchronization and developed a regional load testing library for 100+ multi-region VMs.</p>
                     </div>
-                </div>
-                <div class="experience-entry">
+                </article>
+                <article class="experience-entry">
                     <div class="company-logo">
-                        <img src="images/meta.png" alt="Meta Logo">
+                        <img src="images/meta.png" alt="Meta Logo" loading="lazy">
                     </div>
                     <div class="experience-info">
-                        <h3>Meta, Software Engineer Intern <span class="experience-date">May 2022 - Jul 2022</span></h3>
-                        <p>During my internship at Meta, I had the opportunity to work on the Facebook Group Reels and Video recommender system. I built end-to-end personalized and user-interest-based video generators for the <a href="https://about.fb.com/news/2022/10/facebook-communities-summit-2022/#:~:text=Reels%20in%20Groups%20let%20you,connect%20on%20a%20deeper%20level." target="_blank">Facebook group reels distribution</a>. Additionally, I researched and developed an originality-controlled group video generator for the In-Feed recommendations. These efforts collectively increased group reels watch time by 0.5%, resulting in approximately 12 million more user exposures.</p>
+                        <h3>Meta | Software Engineer Intern <span class="experience-date">May 2022 - Jul 2022</span></h3>
+                        <p>Increased <a href="https://about.fb.com/news/2022/10/facebook-communities-summit-2022/#:~:text=Reels%20in%20Groups%20let%20you,connect%20on%20a%20deeper%20level." target="_blank" rel="noopener noreferrer">Facebook group reels</a> watch time by 0.5% (~12M additional exposures) by building personalized and user-interest-based video generators.</p>
+                        <br>
+                        <p>Designed an originality-controlled video generator for In-Feed recommendations, reducing repetition by 15% and improving content diversity.</p>
                     </div>
-                </div>
-                <div class="experience-entry">
+                </article>
+                <article class="experience-entry">
                     <div class="company-logo">
-                        <img src="images/hilearn.png" alt="HiLearn Logo">
+                        <img src="images/hilearn.png" alt="HiLearn Logo" loading="lazy">
                     </div>
                     <div class="experience-info">
-                        <h3>HiLearn, Research Engineer <span class="experience-date">Feb 2021 - Aug 2021</span></h3>
-                        <p>At HiLearn, I researched machine learning models for simulating market trends in stocks, bonds, and funds, and contributed to the development of an AI-driven financial advisory tool. I investigated long-term market simulation models, created Jupyter notebooks to analyze and compare portfolio management strategies, and designed APIs with Flask to integrate research findings into production, enhancing the application's predictive capabilities.</p>
+                        <h3>HiLearn | Research Engineer <span class="experience-date">Feb 2021 - Aug 2021</span></h3>
+                        <p>Researched ML models for simulating financial markets and developed predictive features for an AI-driven advisory tool.</p>
+                        <br>
+                        <p>Built Jupyter-based analysis workflows and Flask APIs to integrate portfolio strategy research into production, improving predictive accuracy.</p>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </div>
-    </header>
+    </main>
+    
     <footer class="footer">
-        <p>© Hayk Stepanyan 2024 | Created by me in Armenia</p>
+        <p>© Hayk Stepanyan 2025</p>
     </footer>
 
     <!-- Custom Alert Box -->
-    <div id="custom-alert" class="custom-alert">Email address copied to clipboard!</div>
+    <div id="custom-alert" class="custom-alert" role="alert" aria-live="polite">Email address copied to clipboard!</div>
 
     <!-- JavaScript to copy email to clipboard -->
     <script>
@@ -108,15 +121,28 @@
                 alertBox.style.display = 'block';
                 setTimeout(() => {
                     alertBox.classList.add('fade-out');
-                }, 3000); // Wait 4 seconds before starting fade out
+                }, 3000);
                 setTimeout(() => {
                     alertBox.style.display = 'none';
                     alertBox.classList.remove('fade-out');
-                }, 6000); // Wait 6 seconds before hiding completely
+                }, 6000);
             }).catch(err => {
                 console.error('Failed to copy email address: ', err);
             });
         }
+
+        // Add subtle loading animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header');
+            header.style.opacity = '0';
+            header.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                header.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                header.style.opacity = '1';
+                header.style.transform = 'translateY(0)';
+            }, 100);
+        });
     </script>
 </body>
 </html>

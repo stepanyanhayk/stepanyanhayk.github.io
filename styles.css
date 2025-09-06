@@ -1,211 +1,367 @@
+/* Modern CSS Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #2c3e50;
+    line-height: 1.6;
 }
 
+/* Header Container */
 .header {
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Adjust as needed for spacing from top */
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 95%;
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+
+/* Profile Section */
 .profile-pic {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .profile-pic img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
+
+
 .intro {
-    display: flex; /* Added for mobile responsiveness */
-    flex-direction: column; /* Added for mobile responsiveness */
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
     text-align: left;
+    flex: 1;
 }
 
 .intro h1 {
-    font-size: 1.5rem; /* Use rem for responsiveness */
-    margin: 0 0 10px 0;
-    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .intro p {
-    font-size: 1rem; /* Use rem for responsiveness */
-    color: #333;
+    font-size: 1.1rem;
+    color: #5a6c7d;
     margin: 0;
+    line-height: 1.7;
 }
 
+/* Social Links */
 .social-links {
-    margin-top: 10px; /* Adjust spacing from the intro paragraph */
+    margin: 30px 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .social-link {
-    color: #333;
+    color: #5a6c7d;
     font-size: 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
 }
 
 .social-link i {
     margin-right: 8px;
+    font-size: 18px;
 }
 
+/* Section Styling */
 .about-me {
-    margin-top: 20px; /* Spacing between social-links and about-me */
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    font-size: 22px;
-    margin: 0 0 10px 0;
-    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
 }
 
 .about-me p {
-    font-size: 1rem; /* Use rem for responsiveness */
-    color: #333;
-    margin: 0;
+    font-size: 1.05rem;
+    color: #5a6c7d;
+    margin: 0 0 15px 0;
+    line-height: 1.7;
 }
 
+/* Experience Section */
 .experience {
-    margin-top: 20px;
-}
-
-h2 {
-    font-size: 22px;
-    margin: 0 0 10px 0;
-    color: #333;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .experience-entry {
-    display: flex; /* Added for mobile responsiveness */
+    display: flex;
     align-items: flex-start;
-    margin-bottom: 20px; /* Spacing between experience entries */
+    margin-bottom: 30px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border: none;
+}
+
+.experience-entry:last-child {
+    margin-bottom: 0;
 }
 
 .company-logo {
     flex: 0 0 auto;
-    width: 50px;
-    height: auto; /* Use auto for aspect ratio on mobile */
-    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .company-logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ensure logos maintain aspect ratio */
+    object-fit: contain;
+    border-radius: 8px;
+    background: white;
+    padding: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .experience-info {
-    flex: 1; /* Take up remaining space for text on mobile */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
 .experience-info h3 {
-    font-size: 20px;
-    margin: 0 0 5px 0;
-    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .experience-info p {
-    font-size: 1rem; /* Use rem for responsiveness */
-    color: #333;
+    font-size: 1rem;
+    color: #5a6c7d;
     margin: 0;
+    line-height: 1.6;
 }
 
 .experience-date {
-    font-size: 0.9rem; /* Slightly smaller font size */
-    color: #666; /* Lighter color for distinction */
-    margin-left: 10px; /* Spacing from the job title */
-    display: inline-block; /* Ensures proper positioning */
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    font-weight: 500;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 4px 12px;
+    border-radius: 15px;
+    margin-left: 15px;
 }
 
+/* Footer */
 .footer {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 40px;
+    padding: 20px;
     text-align: center;
-    color: #333;
+    color: #7f8c8d;
     font-size: 14px;
+    font-weight: 500;
 }
 
+/* Custom Alert */
 .custom-alert {
     display: none;
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: #4caf50;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
     font-size: 14px;
-    transition: opacity 2s ease-out; /* Fade-out transition */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    z-index: 1000;
 }
 
 .custom-alert.fade-out {
     opacity: 0;
+    transform: translateX(-50%) translateY(20px);
 }
 
+/* Links */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media only screen and (max-width: 768px) {
+    .header {
+        width: 98%;
+        padding: 30px 20px;
+        margin: 20px 0;
+    }
+    
     .profile-pic {
         flex-direction: column;
         align-items: center;
-    }
-    .profile-pic img {
-        width: 100px;
-        height: 100px;
-    }
-    .intro, .about-me, .experience {
         text-align: center;
     }
-    .intro p, .about-me p, .experience-info p {
+    
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .intro {
+        padding: 0;
+        text-align: center;
+    }
+    
+    .intro h1 {
+        font-size: 2rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+    }
+    
+    .social-links {
+        gap: 15px;
+    }
+    
+    .social-link {
+        padding: 10px 15px;
         font-size: 14px;
     }
-
-    .experience-info h3 {
-        flex-direction: column; /* Stack title and date vertically */
-        align-items: center; /* Align text to the left */
-    }
-
-    .experience-date {
-        margin-left: 0; /* Remove margin */
-        margin-top: 5px; /* Add some space between title and date */
-    }
-}
-
-@media only screen and (max-width: 768px) {
+    
     .experience-entry {
         flex-direction: column;
         align-items: center;
-    }
-    .company-logo {
-        width: 40px; /* Reduce logo size */
-        height: 40px;
-        margin-right: 0px;
-        margin-bottom: 10px; /* Adjust spacing */
-    }
-    .experience-info {
         text-align: center;
+        padding: 0;
+    }
+    
+    .company-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .experience-info h3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .experience-date {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .about-me, .experience {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 20px 15px;
+    }
+    
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 200px;
+        justify-content: center;
     }
 }
