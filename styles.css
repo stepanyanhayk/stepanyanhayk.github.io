@@ -418,8 +418,8 @@ h2 {
 
 /* Footer */
 .footer {
-    margin-top: var(--space-xl);
-    padding: var(--space-lg);
+    margin-top: var(--space-md);
+    padding: var(--space-lg) var(--space-lg) 0 var(--space-lg);
     text-align: center;
     color: var(--text-tertiary);
     font-size: 0.875rem;
